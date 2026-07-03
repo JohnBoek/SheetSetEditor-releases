@@ -7,14 +7,12 @@
   published installer's app version (App/SheetSetEditor.App.csproj <Version> at build time),
   and <url> must point at that exact installer asset on this repo's Releases page.
 
-  TEMPORARY TEST STATE (revert to 1.1.0 baseline once update-detection is confirmed working):
-  version bumped above the installed 1.1.0 so the app's update-check reports an update is
-  available and shows the dialog. The url below does NOT point at a real published asset yet —
-  do not click "Update now" during this test, only verify detection + Skip/Remind Later.
+  Current state: baseline entry for the version already in general use (1.1.0) — no
+  update will be offered to users already on this version.
 -->
 <item>
-    <version>1.1.1</version>
-    <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/download/v1.1.1/SheetSetEditor-Setup-1.1.1.exe</url>
+    <version>1.1.0</version>
+    <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/download/v1.1.0/SheetSetEditor-Setup-1.1.0.exe</url>
     <changelog>https://github.com/JohnBoek/SheetSetEditor-releases/blob/main/CHANGELOG.md</changelog>
     <mandatory>false</mandatory>
 </item>
