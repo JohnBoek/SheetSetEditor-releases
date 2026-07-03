@@ -7,16 +7,17 @@
   published installer's app version (App/SheetSetEditor.App.csproj <Version> at build time),
   and <url> must point at that exact installer asset on this repo's Releases page.
 
-  Current state: real release. v1.1.1 is published with the installer asset attached and
-  verified reachable — installs on 1.1.0 will now be offered this update.
+  Current state: real release. v1.1.2 is published with the installer asset attached and
+  verified reachable via the GitHub API (asset size matches the locally-built installer byte
+  for byte) — installs on 1.1.1 and earlier will now be offered this update.
 
-  Note: the actual GitHub tag is "V1.1.1" (capital V) — GitHub tags are case-sensitive, so
-  the download URL below must match that exactly, not the lowercase "v1.1.0" convention used
-  for the previous release. Keep this in mind when publishing future releases.
+  Note: previous releases have had inconsistent tag casing (lowercase "v1.1.0" vs capital
+  "V1.1.1") — always verify the actual tag via the GitHub API before wiring the URL below,
+  don't assume the lowercase convention.
 -->
 <item>
-    <version>1.1.1</version>
-    <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/download/V1.1.1/SheetSetEditor-Setup-1.1.1.exe</url>
+    <version>1.1.2</version>
+    <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/download/v1.1.2/SheetSetEditor-Setup-1.1.2.exe</url>
     <changelog>https://github.com/JohnBoek/SheetSetEditor-releases/blob/main/CHANGELOG.md</changelog>
     <mandatory>false</mandatory>
 </item>
