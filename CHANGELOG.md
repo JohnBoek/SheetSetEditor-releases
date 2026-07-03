@@ -2,6 +2,21 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.2
+
+- Fixed: linking a sheet set's own fields (like Project Number) to each other never actually
+  worked — that panel had no way to set up a field link at all until now.
+- Fixed: linking a sheet set field to a sheet field (or vice versa) could silently do nothing,
+  since a single sheet-set-wide value and a per-sheet value don't line up — the field-link picker
+  now only offers matching fields, both inline and in Options.
+- Fixed: when two fields were mirrored, only one side showed the green "linked" icon.
+- New: right-click a field's link icon to clear its value directly, even without an active link —
+  useful for date/choice fields that previously couldn't be emptied through the UI.
+- Fixed: removing a field link left the old value behind instead of clearing it.
+- Fixed: date fields were unreadable (black text) in Dark and Book theme.
+- Fixed: switching themes while a date field had a value could silently clear it.
+- Improved: the calendar picker for date fields now closes itself as soon as you pick a date.
+
 ## 1.1.1
 
 - Fixed: app could crash on launch when a second instance was started while one was already
