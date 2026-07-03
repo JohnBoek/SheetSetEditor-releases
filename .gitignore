@@ -1,0 +1,16 @@
+# This repo should only ever contain update.xml, CHANGELOG.md, README.md and repo metadata.
+# Installer binaries belong on the Releases page as assets, never committed to git history.
+*.exe
+*.msi
+*.zip
+*.dll
+*.pdb
+bin/
+obj/
+dist/
+installer/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
