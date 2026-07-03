@@ -2,6 +2,18 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.3
+
+- New: sheet and field names with accented letters, Cyrillic, Greek, Hebrew, Arabic, CJK
+  (Chinese/Japanese/Korean), Thai, Devanagari, Georgian, Armenian, and emoji now read and save
+  correctly — previously these could show up as "*" or other garbled characters, and in some
+  cases saving one could silently corrupt an unrelated field elsewhere in the same file.
+- Fixed: renaming a sheet or subset via the right-click menu didn't immediately update the
+  properties panel — clicking Apply right after could silently undo the fresh rename.
+- Improved: clearer error messages — saving a file with a character that isn't supported yet now
+  tells you exactly which one, instead of risking a corrupted file; opening a file AutoCAD wrote
+  with such a character now explains what happened instead of suggesting the file is locked.
+
 ## 1.1.2
 
 - Fixed: linking a sheet set's own fields (like Project Number) to each other never actually
