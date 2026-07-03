@@ -14,6 +14,17 @@
   Note: previous releases have had inconsistent tag casing (lowercase "v1.1.0" vs capital
   "V1.1.1") — always verify the actual tag via the GitHub API before wiring the URL below,
   don't assume the lowercase convention.
+
+  Starting with the release AFTER v1.1.3, the installer's output filename changed from
+  "SheetSetEditor-Setup-<version>.exe" to a fixed "SheetSetEditor-Setup.exe" (see
+  protect/installer/SheetSetEditor.iss), specifically so both this file and the website's
+  download button can use GitHub's version-independent "latest" permalink instead of a
+  per-release URL:
+      https://github.com/JohnBoek/SheetSetEditor-releases/releases/latest/download/SheetSetEditor-Setup.exe
+  That also means the tag-casing gotcha above stops mattering for this URL (GitHub resolves
+  "latest" itself) — <version> below still needs updating by hand each release, only <url>
+  becomes a one-time change. v1.1.3 below still uses its own pinned URL since that release
+  was built with the old versioned filename.
 -->
 <item>
     <version>1.1.3</version>
