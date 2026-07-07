@@ -2,6 +2,12 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.8
+
+- Improved: importing a CSV/TXT file now correctly detects encodings beyond Western European —
+  Central European, Cyrillic, Greek and others are now read correctly instead of only ever being
+  interpreted as Windows-1252.
+
 ## 1.1.7
 
 - Fixed: importing a CSV/TXT file that wasn't UTF-8 encoded (common with exports from non-UTF-8
