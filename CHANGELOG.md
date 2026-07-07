@@ -2,6 +2,15 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.6
+
+- Fixed: closing the update dialog without clicking a button (the X button, Alt+F4, Escape) no
+  longer silently postpones the update prompt for two days — you'll be asked again next launch.
+- Security: license keys are now unique per Boek Solutions product, even on the same computer.
+  If you have an existing license and it's no longer recognized after updating, this is expected —
+  email info@boeksolutions.nl with your Machine ID for a replacement key, a one-time step.
+- New: drag and drop a .dst or .xml file onto the main window to open it.
+
 ## 1.1.5
 
 - Security: strengthened how license keys are generated and validated. If you have an existing
