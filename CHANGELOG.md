@@ -2,6 +2,12 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.5
+
+- Security: strengthened how license keys are generated and validated. If you have an existing
+  license and it's no longer recognized after updating, this is expected — email
+  info@boeksolutions.nl with your Machine ID for a replacement key, a one-time step.
+
 ## 1.1.4
 
 - Fixed: the update download could fail with an error for anyone updating from 1.1.2 or earlier —
