@@ -2,6 +2,16 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.4
+
+- Fixed: the update download could fail with an error for anyone updating from 1.1.2 or earlier —
+  the installer link had gone stale after a naming change on the release side.
+- Fixed: Options > Info could claim "latest version installed" even when the update check itself
+  had actually failed (for example due to a network problem) — it now says clearly that the check
+  failed instead of falsely suggesting you're up to date.
+- New: a "Check for updates" button in Options > Info, so you can check again right away instead of
+  having to restart the app.
+
 ## 1.1.3
 
 - New: sheet and field names with accented letters, Cyrillic, Greek, Hebrew, Arabic, CJK
