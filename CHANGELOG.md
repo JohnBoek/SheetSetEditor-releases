@@ -2,6 +2,12 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.7
+
+- Fixed: importing a CSV/TXT file that wasn't UTF-8 encoded (common with exports from non-UTF-8
+  systems, e.g. containing accented characters like Æ, é, ö) could fail with "No data is available
+  for encoding 1252" instead of importing correctly.
+
 ## 1.1.6
 
 - Fixed: closing the update dialog without clicking a button (the X button, Alt+F4, Escape) no
