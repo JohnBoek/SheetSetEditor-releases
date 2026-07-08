@@ -2,6 +2,17 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.9
+
+- Fixed: importing a CSV/TXT file with field-link or formula rules configured could silently
+  overwrite those fields on sheets that weren't even part of the import, with no warning shown.
+- Fixed: a handful of actions (undoing an import, adding a sheet or subset, dropping a DWG onto
+  the tree) could be started while a save was still in progress, risking a conflicting write.
+- Fixed: a field-link rule could create a custom property on a sheet set that never actually
+  defined it.
+- Improved: several message texts that always showed in Dutch regardless of your language setting
+  now respect your selected language.
+
 ## 1.1.8
 
 - Improved: importing a CSV/TXT file now correctly detects encodings beyond Western European —
