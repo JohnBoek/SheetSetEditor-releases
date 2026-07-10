@@ -2,6 +2,12 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.11
+
+- Fixed: fields inside a Smart Field Group always displayed in alphabetical order, even after
+  reordering them with the up/down buttons in the group editor. The order you set there is now
+  respected, for both the inline-header and card layouts.
+
 ## 1.1.10
 
 - Fixed: Smart Field Groups made up only of sheet-level fields could show up twice on the Sheet
