@@ -7,10 +7,10 @@
   published installer's app version (App/SheetSetEditor.App.csproj <Version> at build time),
   and <url> must point at that exact installer asset on this repo's Releases page.
 
-  Current state: real release. v1.1.9 is published with the installer asset attached, verified via
-  the GitHub API (asset size 60959584 bytes matches the locally-built installer exactly) and the
-  "latest" permalink verified with a real curl -L (final status 200, resolves to
-  releases/download/v1.1.9/SheetSetEditor-Setup.exe) — installs on 1.1.8 and earlier will now be
+  Current state: real release. v1.1.10 is published with the installer asset attached, verified via
+  the GitHub API (asset size 60982484 bytes matches the locally-built installer exactly) and the
+  "latest" permalink verified with a real curl -IL (302 -> 302 -> 200, resolves to
+  releases/download/v1.1.10/SheetSetEditor-Setup.exe) — installs on 1.1.9 and earlier will now be
   offered this update.
 
   Note: previous releases have had inconsistent tag casing (lowercase "v1.1.0" vs capital
@@ -33,7 +33,7 @@
   after the asset got renamed post-publish.
 -->
 <item>
-    <version>1.1.9</version>
+    <version>1.1.10</version>
     <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/latest/download/SheetSetEditor-Setup.exe</url>
     <changelog>https://github.com/JohnBoek/SheetSetEditor-releases/blob/main/CHANGELOG.md</changelog>
     <mandatory>false</mandatory>
