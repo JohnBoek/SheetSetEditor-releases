@@ -2,6 +2,18 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.10
+
+- Fixed: Smart Field Groups made up only of sheet-level fields could show up twice on the Sheet
+  Set tab after first selecting a sheet, then clicking back to the sheet set (not reproducible
+  by going through a subset first).
+- Improved: Smart Field Group order is now set by dragging a group up/down in its list in
+  Options, instead of typing a sort-order number per group.
+- New: Options can now hide field rules and Smart Field Groups that don't belong to the
+  currently open sheet set — useful if you work with multiple sheet sets that each use different
+  custom fields. A rule only shows if every field it uses actually exists in the active sheet
+  set. A toggle lets you show everything again.
+
 ## 1.1.9
 
 - Fixed: importing a CSV/TXT file with field-link or formula rules configured could silently
