@@ -2,6 +2,17 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.12
+
+- New: a button above the sheet tree collapses or expands every node in one click — useful for
+  large revision-folder structures where you usually only need one subset open at a time.
+- New: CSV import has a new scope option, "Sheetset data only (top level)" — updates
+  sheetset-wide fields without touching any sheets, even if the same CSV file also has
+  sheet-level columns filled in.
+- Improved: the license window's "Buy license" button is now the primary action and links
+  straight to the product page; the old e-mail request is now a small "Support" link for
+  activation/purchase problems.
+
 ## 1.1.11
 
 - Fixed: fields inside a Smart Field Group always displayed in alphabetical order, even after
