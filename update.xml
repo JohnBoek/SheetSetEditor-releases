@@ -7,11 +7,11 @@
   published installer's app version (App/SheetSetEditor.App.csproj <Version> at build time),
   and <url> must point at that exact installer asset on this repo's Releases page.
 
-  Current state: real release. v1.1.12 is published with the installer asset attached, verified via
-  the GitHub API (asset name SheetSetEditor-Setup.exe, size 60981054 bytes matches the
+  Current state: real release. v1.1.13 is published with the installer asset attached, verified via
+  the GitHub API (asset name SheetSetEditor-Setup.exe, size 61088788 bytes matches the
   locally-built installer exactly) and the "latest" permalink verified with a real curl -IL
-  (302 -> 302 -> 200, Content-Length 60981054, resolves to
-  releases/download/v1.1.12/SheetSetEditor-Setup.exe) — installs on 1.1.11 and earlier will now be
+  (302 -> 302 -> 200, Content-Length 61088788, resolves to
+  releases/download/v1.1.13/SheetSetEditor-Setup.exe) — installs on 1.1.12 and earlier will now be
   offered this update.
 
   2026-07-10: the v1.1.11 tag briefly had the wrong asset attached (LibSync-Setup.exe, a
@@ -41,7 +41,7 @@
   after the asset got renamed post-publish.
 -->
 <item>
-    <version>1.1.12</version>
+    <version>1.1.13</version>
     <url>https://github.com/JohnBoek/SheetSetEditor-releases/releases/latest/download/SheetSetEditor-Setup.exe</url>
     <changelog>https://github.com/JohnBoek/SheetSetEditor-releases/blob/main/CHANGELOG.md</changelog>
     <mandatory>false</mandatory>
