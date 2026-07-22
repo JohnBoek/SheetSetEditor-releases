@@ -2,6 +2,18 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## 1.1.13
+
+- New: CSV import with the "Sheetset data only" scope now also updates sheet-field defaults
+  (custom properties normally scoped per sheet, shown at the top sheet-set level) — without
+  touching any individual sheet's own value.
+- New: importing with the "All sheets" scope now shows a confirmation warning first, since it
+  overwrites every mapped field on every targeted sheet.
+- Improved: the separate "Apply" button is gone — "Save" now applies any pending property-panel
+  edits and saves in one click, instead of requiring Apply first.
+- Fixed: the Save button could stay disabled after a manual property edit, with no way to enable
+  it now that the old Apply button (which used to do that) is gone.
+
 ## 1.1.12
 
 - New: a button above the sheet tree collapses or expands every node in one click — useful for
