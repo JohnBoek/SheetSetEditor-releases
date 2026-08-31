@@ -2,6 +2,14 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## v1.1.14 (2026-08-31)
+
+- Fixed: the sheet tree now keeps the same folders and sheet sets expanded or collapsed after an edit, instead of collapsing the entire tree.
+- Fixed: sheets imported from DWG layouts are now saved with the complete AutoCAD sheet and layout-reference structure, preventing the sheet set from becoming unreadable after saving.
+- Improved: imported layouts retain their DWG layout handle, so AutoCAD can reliably reconnect each sheet to the correct layout.
+- Improved: number, date and translated status formatting now consistently follows the selected regional settings where appropriate.
+- Fixed: invalid or unsupported DWG files are handled gracefully during layout inspection instead of interrupting the import flow.
+
 ## 1.1.13
 
 - New: CSV import with the "Sheetset data only" scope now also updates sheet-field defaults
