@@ -2,6 +2,13 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## v1.1.15 (2026-09-14)
+
+- Fixed: changing a smart-field character limit now also shortens existing values after confirmation, including sheet-field defaults and values on sheets outside the current selection.
+- Improved: before shortening values, the editor shows the affected fields and creates a backup. Saving checks the limits again, and different sheet values remain separate.
+- Fixed: character limits are now also enforced when typing in sheet-set fields.
+- Fixed: storage, cloud and backup errors are no longer all reported as a file being in use. That message is now reserved for actual file-lock errors.
+
 ## v1.1.14 (2026-08-31)
 
 - Fixed: the sheet tree now keeps the same folders and sheet sets expanded or collapsed after an edit, instead of collapsing the entire tree.
