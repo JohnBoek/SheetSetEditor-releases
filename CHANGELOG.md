@@ -2,6 +2,14 @@
 
 Release notes for BoekSolutions.SheetSetEditor, in sync with `update.xml` and the version tags on this repo's [Releases](../../releases) page.
 
+## v1.2.1 (2026-09-23)
+
+- Improved: the Autodesk Marketplace name is now BoekSolutions Sheet Set Batch Editor, while existing executable names, settings, licences, and update links remain compatible.
+- Improved: new installations request administrator rights for an all-users installation; existing per-user installations continue to update in their current mode.
+- Improved: updates replace the complete AutoCAD plug-in bundle, and uninstalling removes the installed application and plug-in files while preserving user settings and licence state.
+- Improved: the AutoCAD bundle now includes publisher, support, help, and upgrade metadata and targets AutoCAD 2027 only.
+- Added: use `SSMBE` as the Marketplace command in AutoCAD; the existing `SSM_UI` command remains available as a compatibility alias.
+
 ## v1.2.0 (2026-09-15)
 
 - Added: one-time licenses for one active computer, with no annual renewal or restriction to a specific AutoCAD version.

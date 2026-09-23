@@ -1,15 +1,15 @@
-# BoekSolutions Sheet Set Editor
+# BoekSolutions Sheet Set Batch Editor
 
 A Windows desktop tool for viewing and editing AutoCAD Sheet Set (`.dst`) data — as a standalone application, or integrated directly into AutoCAD 2027.
 
 ## ⬇️ Download
 
-Grab the latest installer from **[Releases](../../releases/latest)**. Run the `.exe`, follow the wizard — no admin rights required.
+Grab the latest installer from **[Releases](../../releases/latest)**. Run the `.exe` and follow the wizard. New installations request administrator rights by default so the application and AutoCAD bundle can be installed for all users.
 
 ## What it does
 
 - **Edit Sheet Set data without opening AutoCAD.** Browse sheets, subsets, and custom properties from a standalone app — AutoCAD doesn't need to be running.
-- **AutoCAD integration.** Install the optional plugin component and use the `SSM_UI` command from inside AutoCAD 2027 for the same editor, in context.
+- **AutoCAD integration.** Install the optional plugin component and use the `SSMBE` command from inside AutoCAD 2027 for the same editor, in context. The existing `SSM_UI` command remains available as a compatibility alias.
 - **Bulk import from CSV/TSV.** Import wizard for editing custom properties across many sheets at once.
 - **Smart Field Groups.** Organize custom properties into your own visual groups/cards — purely a display convenience, your `.dst` file is never restructured.
 - **Field linking.** Link two fields together: a value-mapping table (source value → target value), or a live 1-to-1 mirror (edit either field, the other updates automatically) — works across custom properties, standard sheet fields (Number, Title, Description, ...), and sheet set metadata (Project Name, Project Number, ...).
